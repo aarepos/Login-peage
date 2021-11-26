@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <form id="msform">
+      <fieldset id="creatAccount">
+        <h2>creat your account</h2>
+        <input type="text" placeholder="User name" />
+        <input type="password" placeholder="password" />
+        <input type="password" placeholder="password" />
+        <input type="button" value="creat" class="next action-button" />
+        <input
+          type="button"
+          value="login"
+          class="next action-button"
+          style="background-color: rgb(211, 86, 86)"
+          onclick="showLoging()"
+        />
+      </fieldset>
+      <fieldset id="login">
+        <h2 class="fs-title">Login</h2>
+        <input type="text" placeholder="UserName" />
+        <input type="text" placeholder="Password" />
+        <input type="button" class="previous action-button" value="Login" />
+        <input
+          style="background-color: rgb(211, 86, 86)"
+          type="button"
+          class="action-button"
+          value="Create "
+          onclick="showCreateAccountForm()"
+        />
+      </fieldset>
+    </form>
+    <script src="Script.js"></script>
+  </body>
+</html>
